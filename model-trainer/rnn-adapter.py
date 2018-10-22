@@ -45,7 +45,7 @@ adaptresult = {'metric': ' ', 'value':0, 'cost':0}
 adaptoutcome = {'metric': ' ', 'value':0, 'cost':0, 'msg':''}
 
 resultsA= []
-prometheus='192.168.99.101'
+prometheus='192.168.99.100'
 def run_disk_adapter():
    model_disk_model = ModelFactory.create(model_disk.MODEL_PARAMS)
    model_disk_model.enableInference({"predictedField": "disk"})
@@ -341,8 +341,8 @@ def run():
   print result.get(timeout=800), result1.get(timeout=800), result2.get(timeout=800)
   '''
   run_cpu_adapter()
-  #run_mem_adapter()
-  #run_disk_adapter()
+  run_mem_adapter()
+  run_disk_adapter()
   maxU = 0
   metric = ''
   cost = ''
