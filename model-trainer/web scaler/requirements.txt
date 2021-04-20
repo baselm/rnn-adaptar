@@ -24,7 +24,7 @@ numpy==1.12.1
 ordereddict==1.1
 prettytable==0.7.2
 psutil==1.0.1
-py==1.4.34
+py==1.10.0
 pycapnp==0.5.12
 PyMySQL==0.6.2
 pyparsing==2.2.0
